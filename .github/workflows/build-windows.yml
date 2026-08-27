@@ -1,0 +1,23 @@
+# TurboCut (fork): build manual só do instalador Windows, sem cortar release.
+# Útil para validar o empacotamento em repositório privado sem gastar minutos
+# com as demais plataformas. O release oficial continua sendo por tag vX.Y.Z.
+name: Build Windows (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version string baked into artifact names"
+        type: string
+        default: "0.4.0-turbo"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    uses: ./.github/workflows/package.yml
+    with:
+      version: ${{ inputs.version }}
+      platforms: windows
+    secrets: inherit
