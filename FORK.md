@@ -25,6 +25,7 @@ repositório.
 | Nome do app | `src/main.cpp`, `src/qml/Main.qml` | `setApplicationName/OrganizationName` e título da janela → "TurboCut" (AppData fica em `%APPDATA%\TurboCut`, separado do Drift) |
 | Ícones | `Drift_icon.png`, `resources/drift.png`, `resources/windows/drift.ico` | Arte TurboCut (mesmos nomes de arquivo para manter o delta pequeno) |
 | Instalador Windows | `installer/windows/Drift.iss` | Nome/publisher TurboCut, **AppId próprio** (nunca conflita com uma instalação do Drift), binário instalado como `turbocut.exe`, instalador em pt-BR, ProgID `TurboCut.Project` |
+| Visual do instalador | `resources/windows/wizard-large.bmp`, `wizard-small.bmp` (gerados; fonte em `branding/TurboCut-instalador-banner.png`) | Banner e logo do assistente do Inno Setup com a marca TurboCut, no lugar do visual padrão |
 | Feed de atualização | `CMakeLists.txt` (`DRIFT_UPDATE_FEED_URL`) | Aponta para as releases deste repositório, não para as do Drift |
 | Link de bugs no app | `src/qml/components/DebugInfoDialog.qml` | "Report a bug" abre as issues deste repositório (documentação e Discord continuam sendo os do CutWire) |
 | CI | `.github/workflows/package.yml`, `build-windows.yml` (novo) | Artefatos `TurboCut-Setup-*.exe` / `TurboCut-Portable-*.zip`; build manual só-Windows |
