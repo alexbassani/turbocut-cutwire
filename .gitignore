@@ -57,3 +57,7 @@ installer/windows/output/
 # Local credential files — never commit
 .env
 .env.*
+
+# TurboCut — arquivos locais
+.claude/settings.local.json
+_planejamento/
