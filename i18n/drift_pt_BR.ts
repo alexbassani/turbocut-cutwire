@@ -492,7 +492,10 @@
     </message>
     <message numerus="yes">
         <source>Imported %n file(s).</source>
-        <translation><numerusform>%n arquivo importado.</numerusform><numerusform>%n arquivos importados.</numerusform></translation>
+        <translation>
+            <numerusform>%n arquivo importado.</numerusform>
+            <numerusform>%n arquivos importados.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Could not import the selected file(s).</source>
@@ -900,7 +903,10 @@
     </message>
     <message numerus="yes">
         <source>%n clip(s)</source>
-        <translation><numerusform>%n clipe</numerusform><numerusform>%n clipes</numerusform></translation>
+        <translation>
+            <numerusform>%n clipe</numerusform>
+            <numerusform>%n clipes</numerusform>
+        </translation>
     </message>
     <message>
         <source>All</source>
@@ -1641,7 +1647,10 @@
     </message>
     <message numerus="yes">
         <source>Imported %n subtitles</source>
-        <translation><numerusform>%n legenda importada</numerusform><numerusform>%n legendas importadas</numerusform></translation>
+        <translation>
+            <numerusform>%n legenda importada</numerusform>
+            <numerusform>%n legendas importadas</numerusform>
+        </translation>
     </message>
     <message>
         <source>No audio output devices were found, so playback will be silent.</source>
@@ -1665,7 +1674,10 @@
     </message>
     <message numerus="yes">
         <source>Multicam ready: %n camera(s) lined up at the start. Drag a clip to adjust its sync, then pick a shot.</source>
-        <translation><numerusform>Multicâmera pronta: %n câmera alinhada no início. Arraste um clipe para ajustar a sincronia e depois escolha uma tomada.</numerusform><numerusform>Multicâmera pronta: %n câmeras alinhadas no início. Arraste um clipe para ajustar a sincronia e depois escolha uma tomada.</numerusform></translation>
+        <translation>
+            <numerusform>Multicâmera pronta: %n câmera alinhada no início. Arraste um clipe para ajustar a sincronia e depois escolha uma tomada.</numerusform>
+            <numerusform>Multicâmera pronta: %n câmeras alinhadas no início. Arraste um clipe para ajustar a sincronia e depois escolha uma tomada.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Select at least two video clips on different tracks.</source>
@@ -1769,7 +1781,10 @@
     </message>
     <message numerus="yes">
         <source>Found %n scene(s)</source>
-        <translation><numerusform>%n cena encontrada</numerusform><numerusform>%n cenas encontradas</numerusform></translation>
+        <translation>
+            <numerusform>%n cena encontrada</numerusform>
+            <numerusform>%n cenas encontradas</numerusform>
+        </translation>
     </message>
     <message>
         <source>Looking for scenes…</source>
@@ -2585,7 +2600,10 @@
     </message>
     <message numerus="yes">
         <source>Pasted %n clips</source>
-        <translation><numerusform>%n clipe colado</numerusform><numerusform>%n clipes colados</numerusform></translation>
+        <translation>
+            <numerusform>%n clipe colado</numerusform>
+            <numerusform>%n clipes colados</numerusform>
+        </translation>
     </message>
     <message>
         <source>Couldn’t write %1: %2</source>
@@ -2766,7 +2784,10 @@
     </message>
     <message numerus="yes">
         <source>Imported %n files.</source>
-        <translation><numerusform>%n arquivo importado.</numerusform><numerusform>%n arquivos importados.</numerusform></translation>
+        <translation>
+            <numerusform>%n arquivo importado.</numerusform>
+            <numerusform>%n arquivos importados.</numerusform>
+        </translation>
     </message>
     <message>
         <source>An import is already running.</source>
@@ -2774,15 +2795,24 @@
     </message>
     <message numerus="yes">
         <source>Could not import any of the %n selected files.</source>
-        <translation><numerusform>%n arquivo selecionado não pôde ser importado.</numerusform><numerusform>Nenhum dos %n arquivos selecionados pôde ser importado.</numerusform></translation>
+        <translation>
+            <numerusform>%n arquivo selecionado não pôde ser importado.</numerusform>
+            <numerusform>Nenhum dos %n arquivos selecionados pôde ser importado.</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>“%1” is still used by %n clips on the timeline.</source>
-        <translation><numerusform>“%1” ainda é usado por %n clipe na linha do tempo.</numerusform><numerusform>“%1” ainda é usado por %n clipes na linha do tempo.</numerusform></translation>
+        <translation>
+            <numerusform>“%1” ainda é usado por %n clipe na linha do tempo.</numerusform>
+            <numerusform>“%1” ainda é usado por %n clipes na linha do tempo.</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>Replaced with “%1”. %n clips were shortened to fit the new file.</source>
-        <translation><numerusform>Substituído por “%1”. %n clipe foi encurtado para se ajustar ao novo arquivo.</numerusform><numerusform>Substituído por “%1”. %n clipes foram encurtados para se ajustar ao novo arquivo.</numerusform></translation>
+        <translation>
+            <numerusform>Substituído por “%1”. %n clipe foi encurtado para se ajustar ao novo arquivo.</numerusform>
+            <numerusform>Substituído por “%1”. %n clipes foram encurtados para se ajustar ao novo arquivo.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Replaced with “%1”.</source>
@@ -4368,7 +4398,10 @@
     </message>
     <message numerus="yes">
         <source>%n keyframes</source>
-        <translation><numerusform>%n quadro-chave</numerusform><numerusform>%n quadros-chave</numerusform></translation>
+        <translation>
+            <numerusform>%n quadro-chave</numerusform>
+            <numerusform>%n quadros-chave</numerusform>
+        </translation>
     </message>
     <message>
         <source> BPM</source>
@@ -6795,7 +6828,10 @@ Se a reprodução travar, experimente outro.</translation>
     </message>
     <message numerus="yes">
         <source>%n captions</source>
-        <translation><numerusform>%n legenda</numerusform><numerusform>%n legendas</numerusform></translation>
+        <translation>
+            <numerusform>%n legenda</numerusform>
+            <numerusform>%n legendas</numerusform>
+        </translation>
     </message>
     <message>
         <source>(empty)</source>
