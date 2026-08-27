@@ -97,8 +97,8 @@ int main(int argc, char *argv[])
     for (int i = 1; i < argc; ++i) {
         if (qstrcmp(argv[i], "--mcp-stdio") == 0) {
             QCoreApplication app(argc, argv);
-            QCoreApplication::setApplicationName("CutWire Drift");
-            QCoreApplication::setOrganizationName("CutWire Drift");
+            QCoreApplication::setApplicationName("TurboCut");
+            QCoreApplication::setOrganizationName("TurboCut");
             return drift::mcp::runStdioAttach();
         }
     }
@@ -118,8 +118,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
 
     QApplication app(argc, argv);
-    QApplication::setApplicationName("CutWire Drift");
-    QApplication::setOrganizationName("CutWire Drift");
+    QApplication::setApplicationName("TurboCut");
+    QApplication::setOrganizationName("TurboCut");
     // Associates the window with the installed .desktop entry so shells (notably
     // Wayland) can find its icon and app metadata.
     QGuiApplication::setDesktopFileName(QStringLiteral("org.cutwire.Drift"));

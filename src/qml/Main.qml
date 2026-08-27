@@ -16,7 +16,7 @@ ApplicationWindow {
     // assigning it to a window that is already up makes it jump across the screen,
     // and a session left maximized would flash at its windowed size first.
     visible: false
-    title: "CutWire Drift"
+    title: "TurboCut"
     color: Theme.appBackground
 
     LayoutMirroring.enabled: Qt.application.layoutDirection === Qt.RightToLeft
