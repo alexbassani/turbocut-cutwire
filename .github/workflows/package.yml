@@ -437,8 +437,8 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path dist | Out-Null
-          Copy-Item installer\windows\output\Drift-Setup-x64.exe `
-            "dist\Drift-Setup-${{ inputs.version }}-x64.exe" -Force
+          Copy-Item installer\windows\output\TurboCut-Setup-x64.exe `
+            "dist\TurboCut-Setup-${{ inputs.version }}-x64.exe" -Force
 
       - name: Upload installer artifact
         uses: actions/upload-artifact@v4
@@ -456,10 +456,10 @@ jobs:
       - name: Build portable zip
         shell: pwsh
         run: |
-          New-Item -ItemType Directory -Force -Path portable\Drift, dist\portable | Out-Null
-          Copy-Item dist\bin\* portable\Drift -Recurse -Force
+          New-Item -ItemType Directory -Force -Path portable\TurboCut, dist\portable | Out-Null
+          Copy-Item dist\bin\* portable\TurboCut -Recurse -Force
           & "$env:ProgramFiles\7-Zip\7z.exe" a -tzip -mx=9 `
-            "dist\portable\Drift-Portable-${{ inputs.version }}-x64.zip" .\portable\Drift
+            "dist\portable\TurboCut-Portable-${{ inputs.version }}-x64.zip" .\portable\TurboCut
 
       - name: Upload portable artifact
         uses: actions/upload-artifact@v4
