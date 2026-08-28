@@ -117,6 +117,14 @@ int main(int argc, char *argv[])
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
     QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
 
+#ifdef Q_OS_WIN
+    // TurboCut: the DirectWrite font engine renders the qrc-embedded UI fonts with
+    // corrupted glyphs on some GPU/driver/display-scaling combinations (glyph indices
+    // resolve against the wrong table). FreeType is unaffected. Overridable via env.
+    if (qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM"))
+        qputenv("QT_QPA_PLATFORM", "windows:fontengine=freetype");
+#endif
+
     QApplication app(argc, argv);
     QApplication::setApplicationName("TurboCut");
     QApplication::setOrganizationName("TurboCut");
