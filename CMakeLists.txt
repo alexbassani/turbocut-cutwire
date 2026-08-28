@@ -667,7 +667,7 @@ endif()
 qt_add_resources(drift "drift_app_icon"
     PREFIX "/app"
     BASE resources
-    FILES resources/drift.png
+    FILES resources/drift.png resources/splash.png
 )
 
 set_source_files_properties(src/qml/Theme.qml PROPERTIES QT_QML_SINGLETON_TYPE true)
