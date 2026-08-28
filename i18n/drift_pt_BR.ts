@@ -227,816 +227,6 @@
     </message>
 </context>
 <context>
-    <name>AndroidAddMenu</name>
-    <message>
-        <source>Add to timeline</source>
-        <translation>Adicionar à linha do tempo</translation>
-    </message>
-    <message>
-        <source>Media</source>
-        <translation>Mídia</translation>
-    </message>
-    <message>
-        <source>Video, photos and audio from this device</source>
-        <translation>Vídeo, fotos e áudio deste dispositivo</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>Texto</translation>
-    </message>
-    <message>
-        <source>A title or caption you type</source>
-        <translation>Um título ou legenda que você digita</translation>
-    </message>
-    <message>
-        <source>Subtitles</source>
-        <translation>Legendas</translation>
-    </message>
-    <message>
-        <source>Captions, generated or imported</source>
-        <translation>Legendas, geradas ou importadas</translation>
-    </message>
-    <message>
-        <source>Stickers</source>
-        <translation>Adesivos</translation>
-    </message>
-    <message>
-        <source>Emoji and sticker graphics</source>
-        <translation>Emojis e adesivos</translation>
-    </message>
-    <message>
-        <source>Shapes</source>
-        <translation>Formas</translation>
-    </message>
-    <message>
-        <source>Boxes, circles and lines</source>
-        <translation>Retângulos, círculos e linhas</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidBottomRail</name>
-    <message>
-        <source>Edit</source>
-        <translation>Editar</translation>
-    </message>
-    <message>
-        <source>Effects</source>
-        <translation>Efeitos</translation>
-    </message>
-    <message>
-        <source>Audio FX</source>
-        <translation>Efeitos de áudio</translation>
-    </message>
-    <message>
-        <source>Transitions</source>
-        <translation>Transições</translation>
-    </message>
-    <message>
-        <source>Add to timeline</source>
-        <translation>Adicionar à linha do tempo</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidBottomSheet</name>
-    <message>
-        <source>Sheet</source>
-        <translation>Painel</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Fechar</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidCropOverlay</name>
-    <message>
-        <source>Drag the edges to reframe · pinch to zoom</source>
-        <translation>Arraste as bordas para reenquadrar · pince para dar zoom</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Redefinir</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>Apply</source>
-        <translation>Aplicar</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidEditActions</name>
-    <message>
-        <source>Select</source>
-        <translation>Selecionar</translation>
-    </message>
-    <message>
-        <source>Blade — tap a clip to split</source>
-        <translation>Lâmina — toque em um clipe para dividir</translation>
-    </message>
-    <message>
-        <source>Trim start — tap a clip to drop everything before the cut</source>
-        <translation>Aparar início — toque em um clipe para remover tudo antes do corte</translation>
-    </message>
-    <message>
-        <source>Trim end — tap a clip to drop everything after the cut</source>
-        <translation>Aparar fim — toque em um clipe para remover tudo depois do corte</translation>
-    </message>
-    <message>
-        <source>Paste at current time</source>
-        <translation>Colar no tempo atual</translation>
-    </message>
-    <message>
-        <source>Duplicate clip</source>
-        <translation>Duplicar clipe</translation>
-    </message>
-    <message>
-        <source>Merge adjacent clips</source>
-        <translation>Mesclar clipes adjacentes</translation>
-    </message>
-    <message>
-        <source>Close gap after clip</source>
-        <translation>Fechar espaço depois do clipe</translation>
-    </message>
-    <message>
-        <source>Freeze frame at current time</source>
-        <translation>Congelar quadro no tempo atual</translation>
-    </message>
-    <message>
-        <source>Separate audio from video</source>
-        <translation>Separar áudio do vídeo</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Excluir</translation>
-    </message>
-    <message>
-        <source>Add or remove a bookmark here</source>
-        <translation>Adicionar ou remover um marcador aqui</translation>
-    </message>
-    <message>
-        <source>Previous bookmark</source>
-        <translation>Marcador anterior</translation>
-    </message>
-    <message>
-        <source>Next bookmark</source>
-        <translation>Próximo marcador</translation>
-    </message>
-    <message>
-        <source>Mark work area in at current time</source>
-        <translation>Marcar entrada da área de trabalho no tempo atual</translation>
-    </message>
-    <message>
-        <source>Mark work area out at current time</source>
-        <translation>Marcar saída da área de trabalho no tempo atual</translation>
-    </message>
-    <message>
-        <source>Go to work area in</source>
-        <translation>Ir para a entrada da área de trabalho</translation>
-    </message>
-    <message>
-        <source>Go to work area out</source>
-        <translation>Ir para a saída da área de trabalho</translation>
-    </message>
-    <message>
-        <source>Clear work area</source>
-        <translation>Limpar área de trabalho</translation>
-    </message>
-    <message>
-        <source>Toggle snapping</source>
-        <translation>Ativar/desativar encaixe</translation>
-    </message>
-    <message>
-        <source>Analyzing…</source>
-        <translation>Analisando…</translation>
-    </message>
-    <message>
-        <source>Hide beat markers</source>
-        <translation>Ocultar marcadores de batida</translation>
-    </message>
-    <message>
-        <source>Find the beat and show markers</source>
-        <translation>Encontrar a batida e mostrar marcadores</translation>
-    </message>
-    <message>
-        <source>Close gaps when trimming</source>
-        <translation>Fechar espaços ao aparar</translation>
-    </message>
-    <message>
-        <source>Allow clip overlap</source>
-        <translation>Permitir sobreposição de clipes</translation>
-    </message>
-    <message>
-        <source>Shorter layers</source>
-        <translation>Camadas mais baixas</translation>
-    </message>
-    <message>
-        <source>Taller layers</source>
-        <translation>Camadas mais altas</translation>
-    </message>
-    <message>
-        <source>Fit timeline in view</source>
-        <translation>Ajustar a linha do tempo à tela</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidEditor</name>
-    <message>
-        <source>Drift project (*.drift)</source>
-        <translation>Projeto do Drift (*.drift)</translation>
-    </message>
-    <message>
-        <source>Save Project</source>
-        <translation>Salvar projeto</translation>
-    </message>
-    <message>
-        <source>Save Shareable Copy</source>
-        <translation>Salvar cópia compartilhável</translation>
-    </message>
-    <message>
-        <source>Open Project</source>
-        <translation>Abrir projeto</translation>
-    </message>
-    <message>
-        <source>Your timeline is empty</source>
-        <translation>Sua linha do tempo está vazia</translation>
-    </message>
-    <message>
-        <source>Import media or open the Media library to start editing.</source>
-        <translation>Importe mídia ou abra a biblioteca de mídia para começar a editar.</translation>
-    </message>
-    <message>
-        <source>Open Media</source>
-        <translation>Abrir mídia</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>Editar</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidHome</name>
-    <message>
-        <source>Media files (*.mp4 *.mov *.mkv *.avi *.webm *.m4v *.mp3 *.wav *.aac *.flac *.ogg *.m4a *.png *.jpg *.jpeg *.gif *.webp *.bmp)</source>
-        <translation>Arquivos de mídia (*.mp4 *.mov *.mkv *.avi *.webm *.m4v *.mp3 *.wav *.aac *.flac *.ogg *.m4a *.png *.jpg *.jpeg *.gif *.webp *.bmp)</translation>
-    </message>
-    <message>
-        <source>Import Media</source>
-        <translation>Importar mídia</translation>
-    </message>
-    <message>
-        <source>An import is already running.</source>
-        <translation>Já existe uma importação em andamento.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Imported %n file(s).</source>
-        <translation>
-            <numerusform>%n arquivo importado.</numerusform>
-            <numerusform>%n arquivos importados.</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>Could not import the selected file(s).</source>
-        <translation>Não foi possível importar os arquivos selecionados.</translation>
-    </message>
-    <message>
-        <source>Create polished videos fast</source>
-        <translation>Crie vídeos incríveis com rapidez</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Abrir</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation>Mais</translation>
-    </message>
-    <message>
-        <source>Light mode</source>
-        <translation>Modo claro</translation>
-    </message>
-    <message>
-        <source>Dark mode</source>
-        <translation>Modo escuro</translation>
-    </message>
-    <message>
-        <source>Extras</source>
-        <translation>Extras</translation>
-    </message>
-    <message>
-        <source>Update available</source>
-        <translation>Atualização disponível</translation>
-    </message>
-    <message>
-        <source>Recent projects</source>
-        <translation>Projetos recentes</translation>
-    </message>
-    <message>
-        <source>Untitled</source>
-        <translation>Sem título</translation>
-    </message>
-    <message>
-        <source>That project file is missing.</source>
-        <translation>O arquivo desse projeto não foi encontrado.</translation>
-    </message>
-    <message>
-        <source>Remove from recents</source>
-        <translation>Remover dos recentes</translation>
-    </message>
-    <message>
-        <source>New project</source>
-        <translation>Novo projeto</translation>
-    </message>
-    <message>
-        <source>Import media &amp; edit</source>
-        <translation>Importar mídia &amp; editar</translation>
-    </message>
-    <message>
-        <source>Start blank</source>
-        <translation>Começar do zero</translation>
-    </message>
-    <message>
-        <source>Importing %1 of %2…</source>
-        <translation>Importando %1 de %2…</translation>
-    </message>
-    <message>
-        <source>Importing…</source>
-        <translation>Importando…</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidLayoutPicker</name>
-    <message>
-        <source>YouTube</source>
-        <translation>YouTube</translation>
-    </message>
-    <message>
-        <source>Instagram</source>
-        <translation>Instagram</translation>
-    </message>
-    <message>
-        <source>Facebook</source>
-        <translation>Facebook</translation>
-    </message>
-    <message>
-        <source>TikTok</source>
-        <translation>TikTok</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation>Mais</translation>
-    </message>
-    <message>
-        <source>YT Video</source>
-        <translation>Vídeo do YT</translation>
-    </message>
-    <message>
-        <source>YT Short</source>
-        <translation>Short do YT</translation>
-    </message>
-    <message>
-        <source>IG Reel</source>
-        <translation>Reel do IG</translation>
-    </message>
-    <message>
-        <source>IG Story</source>
-        <translation>Story do IG</translation>
-    </message>
-    <message>
-        <source>IG Post</source>
-        <translation>Post do IG</translation>
-    </message>
-    <message>
-        <source>IG Feed</source>
-        <translation>Feed do IG</translation>
-    </message>
-    <message>
-        <source>FB Reel</source>
-        <translation>Reel do FB</translation>
-    </message>
-    <message>
-        <source>FB Video</source>
-        <translation>Vídeo do FB</translation>
-    </message>
-    <message>
-        <source>FB Story</source>
-        <translation>Story do FB</translation>
-    </message>
-    <message>
-        <source>Snapchat</source>
-        <translation>Snapchat</translation>
-    </message>
-    <message>
-        <source>X / Twitter</source>
-        <translation>X / Twitter</translation>
-    </message>
-    <message>
-        <source>LinkedIn</source>
-        <translation>LinkedIn</translation>
-    </message>
-    <message>
-        <source>Square</source>
-        <translation>Quadrado</translation>
-    </message>
-    <message>
-        <source>Landscape</source>
-        <translation>Horizontal</translation>
-    </message>
-    <message>
-        <source>Portrait</source>
-        <translation>Vertical</translation>
-    </message>
-    <message>
-        <source>Classic</source>
-        <translation>Clássico</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation>Personalizado</translation>
-    </message>
-    <message>
-        <source>Any size</source>
-        <translation>Qualquer tamanho</translation>
-    </message>
-    <message>
-        <source>4K</source>
-        <translation>4K</translation>
-    </message>
-    <message>
-        <source>1080p</source>
-        <translation>1080p</translation>
-    </message>
-    <message>
-        <source>720p</source>
-        <translation>720p</translation>
-    </message>
-    <message>
-        <source>Choose a layout for your video</source>
-        <translation>Escolha um layout para o seu vídeo</translation>
-    </message>
-    <message>
-        <source>Template</source>
-        <translation>Modelo</translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>Largura</translation>
-    </message>
-    <message>
-        <source>Height</source>
-        <translation>Altura</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation>Qualidade</translation>
-    </message>
-    <message>
-        <source>Frames per second</source>
-        <translation>Quadros por segundo</translation>
-    </message>
-    <message>
-        <source>%1×%2 · %3 · %4 fps</source>
-        <translation>%1×%2 · %3 · %4 fps</translation>
-    </message>
-    <message>
-        <source>Preview shows the canvas aspect ratio</source>
-        <translation>A pré-visualização mostra a proporção da tela</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidMain</name>
-    <message>
-        <source>Drift project (*.drift)</source>
-        <translation>Projeto do Drift (*.drift)</translation>
-    </message>
-    <message>
-        <source>Save Project</source>
-        <translation>Salvar projeto</translation>
-    </message>
-    <message>
-        <source>Open Project</source>
-        <translation>Abrir projeto</translation>
-    </message>
-    <message>
-        <source>Import in progress…</source>
-        <translation>Importação em andamento…</translation>
-    </message>
-    <message>
-        <source>Export finished.</source>
-        <translation>Exportação concluída.</translation>
-    </message>
-    <message>
-        <source>Export cancelled.</source>
-        <translation>Exportação cancelada.</translation>
-    </message>
-    <message>
-        <source>Export failed. Check the save location and free space.</source>
-        <translation>Falha na exportação. Verifique o local de salvamento e o espaço livre.</translation>
-    </message>
-    <message>
-        <source>Couldn&apos;t create the shareable copy: %1</source>
-        <translation>Não foi possível criar a cópia compartilhável: %1</translation>
-    </message>
-    <message>
-        <source>Captions created.</source>
-        <translation>Legendas criadas.</translation>
-    </message>
-    <message>
-        <source>Couldn’t create captions: %1</source>
-        <translation>Não foi possível criar as legendas: %1</translation>
-    </message>
-    <message>
-        <source>Couldn’t create captions.</source>
-        <translation>Não foi possível criar as legendas.</translation>
-    </message>
-    <message>
-        <source>Couldn’t install “%1”: %2</source>
-        <translation>Não foi possível instalar “%1”: %2</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidPreview</name>
-    <message>
-        <source>Audio only</source>
-        <translation>Somente áudio</translation>
-    </message>
-    <message>
-        <source>No clip at the current time</source>
-        <translation>Nenhum clipe no tempo atual</translation>
-    </message>
-    <message>
-        <source>Fit</source>
-        <translation>Ajustar</translation>
-    </message>
-    <message>
-        <source>Fill</source>
-        <translation>Preencher</translation>
-    </message>
-    <message>
-        <source>Full</source>
-        <translation>Total</translation>
-    </message>
-    <message>
-        <source>Half</source>
-        <translation>Metade</translation>
-    </message>
-    <message>
-        <source>Quarter</source>
-        <translation>Um quarto</translation>
-    </message>
-    <message>
-        <source>Quality: %1</source>
-        <translation>Qualidade: %1</translation>
-    </message>
-    <message>
-        <source>Fast</source>
-        <translation>Rápido</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation>Qualidade</translation>
-    </message>
-    <message>
-        <source>Seek</source>
-        <translation>Buscar</translation>
-    </message>
-    <message>
-        <source>Back 1 second</source>
-        <translation>Voltar 1 segundo</translation>
-    </message>
-    <message>
-        <source>Previous frame</source>
-        <translation>Quadro anterior</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>Pausar</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Reproduzir</translation>
-    </message>
-    <message>
-        <source>Next frame</source>
-        <translation>Próximo quadro</translation>
-    </message>
-    <message>
-        <source>Loop work area on — tap to turn off</source>
-        <translation>Loop da área de trabalho ativado — toque para desativar</translation>
-    </message>
-    <message>
-        <source>Loop work area off — tap to turn on</source>
-        <translation>Loop da área de trabalho desativado — toque para ativar</translation>
-    </message>
-    <message>
-        <source>Forward 1 second</source>
-        <translation>Avançar 1 segundo</translation>
-    </message>
-    <message>
-        <source>View and playback settings</source>
-        <translation>Configurações de exibição e reprodução</translation>
-    </message>
-    <message>
-        <source>Exit fullscreen preview</source>
-        <translation>Sair da pré-visualização em tela cheia</translation>
-    </message>
-    <message>
-        <source>Fullscreen preview</source>
-        <translation>Pré-visualização em tela cheia</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidTimeline</name>
-    <message>
-        <source>Save effect preset</source>
-        <translation>Salvar predefinição de efeito</translation>
-    </message>
-    <message>
-        <source>Rename clip</source>
-        <translation>Renomear clipe</translation>
-    </message>
-    <message>
-        <source>Rename</source>
-        <translation>Renomear</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Nome</translation>
-    </message>
-    <message>
-        <source>Clip name</source>
-        <translation>Nome do clipe</translation>
-    </message>
-    <message>
-        <source>Rename bookmark</source>
-        <translation>Renomear marcador</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Rótulo</translation>
-    </message>
-    <message>
-        <source>Bookmark name</source>
-        <translation>Nome do marcador</translation>
-    </message>
-    <message>
-        <source>Bookmark</source>
-        <translation>Marcador</translation>
-    </message>
-    <message>
-        <source>My look</source>
-        <translation>Meu visual</translation>
-    </message>
-    <message>
-        <source>Drop a transition where two clips meet.</source>
-        <translation>Solte uma transição onde dois clipes se encontram.</translation>
-    </message>
-    <message>
-        <source>Drop that onto a clip to apply it.</source>
-        <translation>Solte sobre um clipe para aplicar.</translation>
-    </message>
-    <message>
-        <source>Keyframes</source>
-        <translation>Quadros-chave</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n clip(s)</source>
-        <translation>
-            <numerusform>%n clipe</numerusform>
-            <numerusform>%n clipes</numerusform>
-        </translation>
-    </message>
-    <message>
-        <source>All</source>
-        <translation>Todos</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation>Nenhum</translation>
-    </message>
-    <message>
-        <source>Done</source>
-        <translation>Concluído</translation>
-    </message>
-    <message>
-        <source>Add new track</source>
-        <translation>Adicionar nova faixa</translation>
-    </message>
-    <message>
-        <source>Go to bookmark</source>
-        <translation>Ir para o marcador</translation>
-    </message>
-    <message>
-        <source>Move to playhead</source>
-        <translation>Mover para o cursor de reprodução</translation>
-    </message>
-    <message>
-        <source>Rename…</source>
-        <translation>Renomear…</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Excluir</translation>
-    </message>
-    <message>
-        <source>Close gap</source>
-        <translation>Fechar espaço</translation>
-    </message>
-    <message>
-        <source>New track</source>
-        <translation>Nova faixa</translation>
-    </message>
-</context>
-<context>
-    <name>AndroidTopBar</name>
-    <message>
-        <source>Back</source>
-        <translation>Voltar</translation>
-    </message>
-    <message>
-        <source>Untitled</source>
-        <translation>Sem título</translation>
-    </message>
-    <message>
-        <source>Undo</source>
-        <translation>Desfazer</translation>
-    </message>
-    <message>
-        <source>Redo</source>
-        <translation>Refazer</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>Exportar</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation>Mais</translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation>Salvar</translation>
-    </message>
-    <message>
-        <source>Shareable copy</source>
-        <translation>Cópia compartilhável</translation>
-    </message>
-    <message>
-        <source>Open project</source>
-        <translation>Abrir projeto</translation>
-    </message>
-    <message>
-        <source>New project</source>
-        <translation>Novo projeto</translation>
-    </message>
-    <message>
-        <source>Choose layout</source>
-        <translation>Escolher layout</translation>
-    </message>
-    <message>
-        <source>Project properties</source>
-        <translation>Propriedades do projeto</translation>
-    </message>
-    <message>
-        <source>Effect templates</source>
-        <translation>Modelos de efeito</translation>
-    </message>
-    <message>
-        <source>Scenes</source>
-        <translation>Cenas</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Configurações</translation>
-    </message>
-    <message>
-        <source>Light mode</source>
-        <translation>Modo claro</translation>
-    </message>
-    <message>
-        <source>Dark mode</source>
-        <translation>Modo escuro</translation>
-    </message>
-    <message>
-        <source>Extras</source>
-        <translation>Extras</translation>
-    </message>
-    <message>
-        <source>Multicam</source>
-        <translation>Multicâmera</translation>
-    </message>
-    <message>
-        <source>Debug info</source>
-        <translation>Informações de depuração</translation>
-    </message>
-    <message>
-        <source>Update available</source>
-        <translation>Atualização disponível</translation>
-    </message>
-</context>
-<context>
     <name>AnimationInspector</name>
     <message>
         <source>None</source>
@@ -1720,54 +910,6 @@
         <translation>Recortando assunto…</translation>
     </message>
     <message>
-        <source>Select a video clip to stabilize</source>
-        <translation>Selecione um clipe de vídeo para estabilizar</translation>
-    </message>
-    <message>
-        <source>Clip has no video file</source>
-        <translation>O clipe não tem arquivo de vídeo</translation>
-    </message>
-    <message>
-        <source>Stabilization already in progress for this clip</source>
-        <translation>Estabilização já em andamento para este clipe</translation>
-    </message>
-    <message>
-        <source>Could not create stabilization cache directory</source>
-        <translation>Não foi possível criar a pasta de cache da estabilização</translation>
-    </message>
-    <message>
-        <source>ffmpeg executable not found in PATH</source>
-        <translation>Executável do ffmpeg não encontrado no PATH</translation>
-    </message>
-    <message>
-        <source>Stabilize Video</source>
-        <translation>Estabilizar vídeo</translation>
-    </message>
-    <message>
-        <source>Stabilization analysis failed or cancelled.</source>
-        <translation>A análise de estabilização falhou ou foi cancelada.</translation>
-    </message>
-    <message>
-        <source>Video stabilized successfully!</source>
-        <translation>Vídeo estabilizado com sucesso!</translation>
-    </message>
-    <message>
-        <source>Stabilization rendering failed or cancelled.</source>
-        <translation>A renderização da estabilização falhou ou foi cancelada.</translation>
-    </message>
-    <message>
-        <source>Remove Stabilization</source>
-        <translation>Remover estabilização</translation>
-    </message>
-    <message>
-        <source>Change Stabilization Smoothing</source>
-        <translation>Alterar suavização da estabilização</translation>
-    </message>
-    <message>
-        <source>Change Stabilization Tripod Mode</source>
-        <translation>Alterar modo tripé da estabilização</translation>
-    </message>
-    <message>
         <source>Detecting faces…</source>
         <translation>Detectando rostos…</translation>
     </message>
@@ -1803,78 +945,6 @@
         <translation>Não foi possível criar um arquivo de saída</translation>
     </message>
     <message>
-        <source>An edit is already saving</source>
-        <translation>Uma edição já está sendo salva</translation>
-    </message>
-    <message>
-        <source>Could not open the media file</source>
-        <translation>Não foi possível abrir o arquivo de mídia</translation>
-    </message>
-    <message>
-        <source>Saving…</source>
-        <translation>Salvando…</translation>
-    </message>
-    <message>
-        <source>Saving media…</source>
-        <translation>Salvando mídia…</translation>
-    </message>
-    <message>
-        <source>Couldn’t save that edit</source>
-        <translation>Não foi possível salvar essa edição</translation>
-    </message>
-    <message>
-        <source>Updating the library…</source>
-        <translation>Atualizando a biblioteca…</translation>
-    </message>
-    <message>
-        <source>Couldn’t update the library</source>
-        <translation>Não foi possível atualizar a biblioteca</translation>
-    </message>
-    <message>
-        <source>Media edited</source>
-        <translation>Mídia editada</translation>
-    </message>
-    <message>
-        <source>Building keyframes…</source>
-        <translation>Criando quadros-chave…</translation>
-    </message>
-    <message>
-        <source>Rendering stabilized video…</source>
-        <translation>Renderizando vídeo estabilizado…</translation>
-    </message>
-    <message>
-        <source>Analyzing camera motion…</source>
-        <translation>Analisando movimento da câmera…</translation>
-    </message>
-    <message>
-        <source>Stabilization cancelled.</source>
-        <translation>Estabilização cancelada.</translation>
-    </message>
-    <message>
-        <source>Stabilization analysis file is missing.</source>
-        <translation>O arquivo de análise da estabilização está faltando.</translation>
-    </message>
-    <message>
-        <source>Could not read camera motion from the analysis file.</source>
-        <translation>Não foi possível ler o movimento da câmera no arquivo de análise.</translation>
-    </message>
-    <message>
-        <source>Stabilize with Keyframes</source>
-        <translation>Estabilizar com quadros-chave</translation>
-    </message>
-    <message>
-        <source>Stabilization keyframes applied.</source>
-        <translation>Quadros-chave de estabilização aplicados.</translation>
-    </message>
-    <message>
-        <source>Could not store the stabilized video.</source>
-        <translation>Não foi possível armazenar o vídeo estabilizado.</translation>
-    </message>
-    <message>
-        <source>Change Stabilization Mode</source>
-        <translation>Alterar modo de estabilização</translation>
-    </message>
-    <message>
         <source> (denoised)</source>
         <translation> (sem ruído)</translation>
     </message>
@@ -1888,7 +958,7 @@
     </message>
     <message>
         <source>This project uses &quot;%1&quot;, which isn’t installed — it won’t show. Open Extras to install it.</source>
-        <translation>Este projeto usa &quot;%1&quot;, que não está instalado — ele não vai aparecer. Abra Extras para instalar.</translation>
+        <translation>Este projeto usa "%1", que não está instalado — ele não vai aparecer. Abra Extras para instalar.</translation>
     </message>
     <message>
         <source>This project uses %1 effects or transitions that aren’t installed (%2%3) — they won’t show. Open Extras to install them.</source>
@@ -2626,14 +1696,6 @@
         <translation>Exportando…</translation>
     </message>
     <message>
-        <source>Getting your video ready to share…</source>
-        <translation>Preparando seu vídeo para compartilhar…</translation>
-    </message>
-    <message>
-        <source>Nothing on this device can share that file</source>
-        <translation>Nada neste dispositivo consegue compartilhar esse arquivo</translation>
-    </message>
-    <message>
         <source>Nudge selection</source>
         <translation>Deslocar seleção</translation>
     </message>
@@ -2789,10 +1851,6 @@
             <numerusform>%n arquivos importados.</numerusform>
         </translation>
     </message>
-    <message>
-        <source>An import is already running.</source>
-        <translation>Uma importação já está em andamento.</translation>
-    </message>
     <message numerus="yes">
         <source>Could not import any of the %n selected files.</source>
         <translation>
@@ -2819,60 +1877,8 @@
         <translation>Substituído por “%1”.</translation>
     </message>
     <message>
-        <source>Saved “%1”. Drag it onto the timeline.</source>
-        <translation>“%1” salvo. Arraste para a linha do tempo.</translation>
-    </message>
-    <message>
         <source>Import Media</source>
         <translation>Importar mídia</translation>
-    </message>
-    <message>
-        <source>Media</source>
-        <translation>Mídia</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>Texto</translation>
-    </message>
-    <message>
-        <source>Subtitles</source>
-        <translation>Legendas</translation>
-    </message>
-    <message>
-        <source>Stickers</source>
-        <translation>Adesivos</translation>
-    </message>
-    <message>
-        <source>Shapes</source>
-        <translation>Formas</translation>
-    </message>
-    <message>
-        <source>Scenes</source>
-        <translation>Cenas</translation>
-    </message>
-    <message>
-        <source>Effects</source>
-        <translation>Efeitos</translation>
-    </message>
-    <message>
-        <source>Templates</source>
-        <translation>Modelos</translation>
-    </message>
-    <message>
-        <source>Transitions</source>
-        <translation>Transições</translation>
-    </message>
-    <message>
-        <source>Audio FX</source>
-        <translation>FX de áudio</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Configurações</translation>
-    </message>
-    <message>
-        <source>Shortcuts</source>
-        <translation>Atalhos</translation>
     </message>
     <message>
         <source>Drop to import</source>
@@ -2917,10 +1923,6 @@
     <message>
         <source>Import video, audio or image files</source>
         <translation>Importar arquivos de vídeo, áudio ou imagem</translation>
-    </message>
-    <message>
-        <source>Touch and hold a transition, then drag it onto where two clips meet.</source>
-        <translation>Toque e segure uma transição, depois arraste para onde dois clipes se encontram.</translation>
     </message>
     <message>
         <source>Drag onto where two clips overlap. They fade into each other by default.</source>
@@ -3110,10 +2112,6 @@
 </context>
 <context>
     <name>AudioInspector</name>
-    <message>
-        <source>Volume</source>
-        <translation>Volume</translation>
-    </message>
     <message>
         <source>Recommended caption length</source>
         <translation>Tamanho recomendado da legenda</translation>
@@ -4220,10 +3218,6 @@
         <source>Untitled</source>
         <translation>Sem título</translation>
     </message>
-    <message>
-        <source>Share</source>
-        <translation>Compartilhar</translation>
-    </message>
 </context>
 <context>
     <name>FontCatalog</name>
@@ -4665,30 +3659,6 @@
         <translation>Remover recorte</translation>
     </message>
     <message>
-        <source>Center X</source>
-        <translation>Centro X</translation>
-    </message>
-    <message>
-        <source>Center Y</source>
-        <translation>Centro Y</translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>Largura</translation>
-    </message>
-    <message>
-        <source>Height</source>
-        <translation>Altura</translation>
-    </message>
-    <message>
-        <source>Rotation</source>
-        <translation>Rotação</translation>
-    </message>
-    <message>
-        <source>Feather</source>
-        <translation>Difusão</translation>
-    </message>
-    <message>
         <source>Mask changed</source>
         <translation>Máscara alterada</translation>
     </message>
@@ -4702,6 +3672,10 @@
     <message>
         <source>No media yet</source>
         <translation>Nenhuma mídia ainda</translation>
+    </message>
+    <message>
+        <source>Drag video, audio or images here, or use Import.</source>
+        <translation>Arraste vídeo, áudio ou imagens para cá, ou use Importar.</translation>
     </message>
     <message>
         <source>Import media</source>
@@ -4724,14 +3698,6 @@
         <translation>Renomear…</translation>
     </message>
     <message>
-        <source>%1 — drag to the timeline, right-click to preview</source>
-        <translation>%1 — arraste para a linha do tempo, clique com o botão direito para pré-visualizar</translation>
-    </message>
-    <message>
-        <source>Preview and edit…</source>
-        <translation>Pré-visualizar e editar…</translation>
-    </message>
-    <message>
         <source>Replace media…</source>
         <translation>Substituir mídia…</translation>
     </message>
@@ -4742,77 +3708,6 @@
     <message>
         <source>Remove from project</source>
         <translation>Remover do projeto</translation>
-    </message>
-    <message>
-        <source>Import video, audio or images, then drag them onto the timeline. Right-click a clip to preview and trim it first.</source>
-        <translation>Importe vídeo, áudio ou imagens e arraste para a linha do tempo. Clique com o botão direito em um clipe para pré-visualizar e aparar antes.</translation>
-    </message>
-</context>
-<context>
-    <name>MediaPreviewWindow</name>
-    <message>
-        <source>Preview — %1</source>
-        <translation>Pré-visualização — %1</translation>
-    </message>
-    <message>
-        <source>Preview</source>
-        <translation>Pré-visualização</translation>
-    </message>
-    <message>
-        <source>Play the clip and drag the ends to keep only the part you want. Save replaces this item in the media bin.</source>
-        <translation>Reproduza o clipe e arraste as pontas para manter só a parte que você quer. Salvar substitui este item na biblioteca.</translation>
-    </message>
-    <message>
-        <source>Drag the frame to crop. Save replaces this item in the media bin — then drag it onto the timeline.</source>
-        <translation>Arraste a moldura para recortar. Salvar substitui este item na biblioteca — depois arraste para a linha do tempo.</translation>
-    </message>
-    <message>
-        <source>Play, crop, and drag the ends to keep a range. Save replaces this item in the media bin — then drag it onto the timeline.</source>
-        <translation>Reproduza, recorte e arraste as pontas para manter um trecho. Salvar substitui este item na biblioteca — depois arraste para a linha do tempo.</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>Pausar</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Reproduzir</translation>
-    </message>
-    <message>
-        <source>Set In</source>
-        <translation>Definir entrada</translation>
-    </message>
-    <message>
-        <source>Set Out</source>
-        <translation>Definir saída</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Redefinir</translation>
-    </message>
-    <message>
-        <source>Saving…</source>
-        <translation>Salvando…</translation>
-    </message>
-    <message>
-        <source>Save writes a new file over this item in the bin.</source>
-        <translation>Salvar grava um novo arquivo sobre este item na biblioteca.</translation>
-    </message>
-    <message>
-        <source>Nothing to save — drag this item onto the timeline when you are ready.</source>
-        <translation>Nada para salvar — arraste este item para a linha do tempo quando estiver pronto.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Fechar</translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation>Salvar</translation>
     </message>
 </context>
 <context>
@@ -5350,68 +4245,8 @@ Se a reprodução travar, experimente outro.</translation>
 <context>
     <name>PropertiesPanel</name>
     <message>
-        <source>General</source>
-        <translation>Geral</translation>
-    </message>
-    <message>
-        <source>Text</source>
-        <translation>Texto</translation>
-    </message>
-    <message>
-        <source>Shape</source>
-        <translation>Forma</translation>
-    </message>
-    <message>
-        <source>Subtitles</source>
-        <translation>Legendas</translation>
-    </message>
-    <message>
-        <source>Transform</source>
-        <translation>Transformar</translation>
-    </message>
-    <message>
-        <source>Stabilization</source>
-        <translation>Estabilização</translation>
-    </message>
-    <message>
-        <source>Animation</source>
-        <translation>Animação</translation>
-    </message>
-    <message>
-        <source>Audio</source>
-        <translation>Áudio</translation>
-    </message>
-    <message>
-        <source>Speed</source>
-        <translation>Velocidade</translation>
-    </message>
-    <message>
-        <source>Blending</source>
-        <translation>Mesclagem</translation>
-    </message>
-    <message>
-        <source>Masks</source>
-        <translation>Máscaras</translation>
-    </message>
-    <message>
-        <source>Effects</source>
-        <translation>Efeitos</translation>
-    </message>
-    <message>
-        <source>Audio FX</source>
-        <translation>Efeitos de áudio</translation>
-    </message>
-    <message>
-        <source>Transition</source>
-        <translation>Transição</translation>
-    </message>
-    <message>
         <source>It&apos;s empty here</source>
         <translation>Está vazio por aqui</translation>
-    </message>
-    <message>
-        <source>Tap a clip on the timeline to edit its properties</source>
-        <translation>Toque em um clipe na linha do tempo para editar suas propriedades</translation>
     </message>
     <message>
         <source>Click a clip on the timeline to edit its properties</source>
@@ -6087,22 +4922,6 @@ Se a reprodução travar, experimente outro.</translation>
         <translation>Fazer o ícone de Extras pulsar quando houver atualizações para pacotes que você já tem instalados</translation>
     </message>
     <message>
-        <source>Interface scale</source>
-        <translation>Escala da interface</translation>
-    </message>
-    <message>
-        <source>100% (system)</source>
-        <translation>100% (sistema)</translation>
-    </message>
-    <message>
-        <source>Makes buttons, text, and icons larger. This is extra scale on top of the size already set in your display settings. Takes effect after restart.</source>
-        <translation>Deixa botões, textos e ícones maiores. É uma escala extra além do tamanho já definido nas configurações de tela. Entra em vigor após reiniciar.</translation>
-    </message>
-    <message>
-        <source>Restart Drift to apply this size.</source>
-        <translation>Reinicie o Drift para aplicar este tamanho.</translation>
-    </message>
-    <message>
         <source>Language</source>
         <translation>Idioma</translation>
     </message>
@@ -6119,8 +4938,8 @@ Se a reprodução travar, experimente outro.</translation>
         <translation>Reabrir o último projeto ao iniciar</translation>
     </message>
     <message>
-        <source>Automatically restore the last open project on startup. Closing still asks you to save; a crash snapshot never overwrites your save file.</source>
-        <translation>Restaura automaticamente o último projeto aberto ao iniciar. Fechar continua perguntando se você quer salvar; um instantâneo de travamento nunca sobrescreve seu arquivo salvo.</translation>
+        <source>Automatically restore the last open project. Unsaved work is kept in a side snapshot and never overwrites your save file.</source>
+        <translation>Reabrir automaticamente o último projeto aberto. O trabalho não salvo fica em um instantâneo à parte e nunca sobrescreve seu arquivo salvo.</translation>
     </message>
     <message>
         <source>Agent access</source>
@@ -6681,89 +5500,6 @@ Se a reprodução travar, experimente outro.</translation>
     <message>
         <source>Could not write subtitle file</source>
         <translation>Não foi possível gravar o arquivo de legenda</translation>
-    </message>
-</context>
-<context>
-    <name>StabilizeInspector</name>
-    <message>
-        <source>Bake a new video</source>
-        <translation>Gerar um novo vídeo</translation>
-    </message>
-    <message>
-        <source>Animate with keyframes</source>
-        <translation>Animar com quadros-chave</translation>
-    </message>
-    <message>
-        <source>Update stabilization</source>
-        <translation>Atualizar estabilização</translation>
-    </message>
-    <message>
-        <source>Re-apply keyframes</source>
-        <translation>Reaplicar quadros-chave</translation>
-    </message>
-    <message>
-        <source>Stabilize with keyframes</source>
-        <translation>Estabilizar com quadros-chave</translation>
-    </message>
-    <message>
-        <source>Re-stabilize video</source>
-        <translation>Reestabilizar vídeo</translation>
-    </message>
-    <message>
-        <source>Stabilize video</source>
-        <translation>Estabilizar vídeo</translation>
-    </message>
-    <message>
-        <source>Smooths camera shake by writing position keyframes. Linear pans stay as two keys far apart; only direction changes get extra keys. Changing smoothness or tripod does not update the preview until you apply.</source>
-        <translation>Suaviza o tremor da câmera gravando quadros-chave de posição. Panorâmicas lineares ficam como duas chaves distantes; só mudanças de direção ganham chaves extras. Mudar a suavização ou o tripé não atualiza a pré-visualização até você aplicar.</translation>
-    </message>
-    <message>
-        <source>Smooths camera shake. Drift scans the clip once, then renders a new video. Changing smoothness or tripod does not update the preview until you apply.</source>
-        <translation>Suaviza o tremor da câmera. O Drift analisa o clipe uma vez e depois renderiza um novo vídeo. Mudar a suavização ou o tripé não atualiza a pré-visualização até você aplicar.</translation>
-    </message>
-    <message>
-        <source>Mode</source>
-        <translation>Modo</translation>
-    </message>
-    <message>
-        <source>Bake a new file, or animate the clip with sparse transform keys</source>
-        <translation>Gerar um novo arquivo ou animar o clipe com chaves de transformação esparsas</translation>
-    </message>
-    <message>
-        <source>Smoothing</source>
-        <translation>Suavização</translation>
-    </message>
-    <message>
-        <source>How many frames the smoother looks ahead and behind. Higher values hide more shake but crop the picture more.</source>
-        <translation>Quantos quadros o suavizador olha para a frente e para trás. Valores maiores escondem mais tremor, mas recortam mais a imagem.</translation>
-    </message>
-    <message>
-        <source>Tripod mode</source>
-        <translation>Modo tripé</translation>
-    </message>
-    <message>
-        <source>Locks the framing as if the camera were on a tripod. Crops more aggressively than smoothing alone.</source>
-        <translation>Trava o enquadramento como se a câmera estivesse em um tripé. Recorta de forma mais agressiva que só a suavização.</translation>
-    </message>
-    <message>
-        <source>Position keys still use the last run. Update to apply these settings.</source>
-        <translation>As chaves de posição ainda usam a última execução. Atualize para aplicar estas configurações.</translation>
-    </message>
-    <message>
-        <source>Preview still uses the last run. Update to apply these settings.</source>
-        <translation>A pré-visualização ainda usa a última execução. Atualize para aplicar estas configurações.</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Remover</translation>
-    </message>
-    <message>
-        <source>Stabilizing…</source>
-        <translation>Estabilizando…</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
     </message>
 </context>
 <context>
@@ -7675,14 +6411,6 @@ Se a reprodução travar, experimente outro.</translation>
         <translation>Legendas</translation>
     </message>
     <message>
-        <source>Properties</source>
-        <translation>Propriedades</translation>
-    </message>
-    <message>
-        <source>Select multiple</source>
-        <translation>Selecionar vários</translation>
-    </message>
-    <message>
         <source>Split at current time</source>
         <translation>Dividir no tempo atual</translation>
     </message>
@@ -7998,26 +6726,6 @@ Se a reprodução travar, experimente outro.</translation>
         <translation>Isso remove a faixa vazia. Você pode desfazer depois.</translation>
     </message>
     <message>
-        <source>A</source>
-        <translation>A</translation>
-    </message>
-    <message>
-        <source>T</source>
-        <translation>T</translation>
-    </message>
-    <message>
-        <source>S</source>
-        <translation>L</translation>
-    </message>
-    <message>
-        <source>G</source>
-        <translation>G</translation>
-    </message>
-    <message>
-        <source>V</source>
-        <translation>V</translation>
-    </message>
-    <message>
         <source>Audio</source>
         <translation>Áudio</translation>
     </message>
@@ -8066,36 +6774,12 @@ Se a reprodução travar, experimente outro.</translation>
         <translation>Mostrar forma de onda</translation>
     </message>
     <message>
-        <source>Taller row</source>
-        <translation>Linha mais alta</translation>
-    </message>
-    <message>
-        <source>Shorter row</source>
-        <translation>Linha mais baixa</translation>
-    </message>
-    <message>
         <source>Reset row height</source>
         <translation>Redefinir altura da linha</translation>
     </message>
 </context>
 <context>
     <name>TransformInspector</name>
-    <message>
-        <source>Opacity</source>
-        <translation>Opacidade</translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>Largura</translation>
-    </message>
-    <message>
-        <source>Height</source>
-        <translation>Altura</translation>
-    </message>
-    <message>
-        <source>Angle</source>
-        <translation>Ângulo</translation>
-    </message>
     <message>
         <source>Video only</source>
         <translation>Somente vídeo</translation>
