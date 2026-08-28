@@ -29,8 +29,14 @@
 #include <QQmlEngine>
 #include <QQuickWindow>
 #include <QSurfaceFormat>
+#include <QPainter>
+#include <QSplashScreen>
+#include <QThread>
+#include <QTimer>
 #include <QtQml/qqml.h>
 #include <QFile>
+
+#include <cmath>
 
 extern "C" {
 #include <libavutil/log.h>
@@ -63,6 +69,62 @@ void applyLogLevel(bool verbose)
                                                           "*.info=false"));
     av_log_set_level(verbose ? AV_LOG_VERBOSE : AV_LOG_ERROR);
 }
+
+// TurboCut: splash de abertura — fundo preto com o wordmark (resources/splash.png,
+// pixmap 2x para telas com escala) e uma barra prata espelhada deslizando em modo
+// indeterminado. Fica na tela enquanto fontes, caches e o QML carregam; fecha no
+// instante em que a janela principal aparece.
+class TurboSplash : public QSplashScreen
+{
+public:
+    TurboSplash()
+        : QSplashScreen([] {
+              QPixmap pm(QStringLiteral(":/app/splash.png"));
+              pm.setDevicePixelRatio(2.0);
+              return pm;
+          }())
+    {
+        m_pulse.setInterval(33);
+        QObject::connect(&m_pulse, &QTimer::timeout, this, [this] {
+            m_phase = std::fmod(m_phase + 0.022, 1.0);
+            update();
+        });
+        m_pulse.start();
+    }
+
+protected:
+    void drawContents(QPainter *painter) override
+    {
+        QSplashScreen::drawContents(painter);
+        const double w = width();
+        const double h = height();
+        const double barW = w * 0.46;
+        const double barH = 5.0;
+        const QRectF track((w - barW) / 2.0, h * 0.72, barW, barH);
+        painter->setRenderHint(QPainter::Antialiasing);
+        painter->setPen(Qt::NoPen);
+        painter->setBrush(QColor(255, 255, 255, 26));
+        painter->drawRoundedRect(track, barH / 2.0, barH / 2.0);
+        // Bloco prata espelhado varrendo o trilho (indeterminado: o boot não tem
+        // estágios instrumentados, então a barra mostra vida, não porcentagem).
+        const double blockW = barW * 0.28;
+        const double x = track.left() - blockW + m_phase * (barW + 2.0 * blockW);
+        QRectF block = QRectF(x, track.top(), blockW, barH).intersected(track);
+        if (block.width() <= 0.5)
+            return;
+        QLinearGradient silver(block.topLeft(), block.bottomLeft());
+        silver.setColorAt(0.0, QColor(250, 250, 252));
+        silver.setColorAt(0.45, QColor(148, 150, 156));
+        silver.setColorAt(0.5, QColor(232, 234, 238));
+        silver.setColorAt(1.0, QColor(108, 110, 116));
+        painter->setBrush(silver);
+        painter->drawRoundedRect(block, barH / 2.0, barH / 2.0);
+    }
+
+private:
+    QTimer m_pulse;
+    double m_phase = 0.0;
+};
 
 class FileOpenFilter : public QObject
 {
@@ -136,6 +198,17 @@ int main(int argc, char *argv[])
     // for Explorer and pinned-taskbar identity.
     QApplication::setWindowIcon(QIcon(QStringLiteral(":/app/drift.png")));
 
+    // TurboCut: splash antes das cargas pesadas (fontes, caches, QML). O fade é
+    // manual porque essas cargas bloqueiam o event loop — uma QPropertyAnimation
+    // só rodaria depois que tudo já tivesse carregado.
+    auto *splash = new TurboSplash();
+    splash->show();
+    for (int step = 1; step <= 10; ++step) {
+        splash->setWindowOpacity(step / 10.0);
+        QCoreApplication::processEvents();
+        QThread::msleep(24);
+    }
+
     // qsTr/tr resolve when the QML engine loads, so translators must be installed first.
     // Protocol strings under src/mcp/ are excluded from the catalog; they stay English.
     AppController::installUiTranslators();
@@ -185,6 +258,20 @@ int main(int argc, char *argv[])
     QObject::connect(
         &engine, &QQmlApplicationEngine::objectCreationFailed, &app, [] { QGuiApplication::exit(-1); }, Qt::QueuedConnection);
     engine.loadFromModule("Drift", "Main");
+
+    // Fecha o splash no instante em que a janela principal aparecer (Main.qml nasce
+    // com visible=false e só mostra depois de restaurar a geometria da sessão).
+    const auto rootObjects = engine.rootObjects();
+    QQuickWindow *mainWindow =
+        rootObjects.isEmpty() ? nullptr : qobject_cast<QQuickWindow *>(rootObjects.first());
+    if (mainWindow) {
+        QObject::connect(mainWindow, &QWindow::visibleChanged, splash, [splash](bool visible) {
+            if (visible)
+                splash->deleteLater();
+        });
+    }
+    // Rede de segurança: o splash nunca fica pendurado se a janela não vier.
+    QTimer::singleShot(15000, splash, &QObject::deleteLater);
 
     return app.exec();
 }
