@@ -120,6 +120,19 @@
         for timeline scroll and pan; and to @jmn8718 for folders in the media bin.</p>
       </description>
     </release>
+    <release version="0.4.1" date="2026-08-29">
+      <url type="details">https://github.com/alexbassani/turbocut-cutwire/releases/tag/v0.4.1</url>
+      <description>
+        <p>O instalador do Windows agora leva junto o runtime do Visual C++, que faltava
+        em computadores recém-formatados.</p>
+        <ul>
+          <li>Corrigido: em um Windows sem o Visual C++ Redistributable, o TurboCut não
+          abria e mostrava o erro "MSVCP140_1.dll não foi encontrado". O instalador agora
+          detecta a ausência e instala o componente sozinho, sem perguntar nada</li>
+          <li>Quem já tem o componente não perde tempo: a instalação pula essa etapa</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.4.0" date="2026-08-25">
       <url type="details">https://github.com/CutWire-Studios/Drift/releases/tag/v0.4.0</url>
       <description>
