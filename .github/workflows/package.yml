@@ -425,6 +425,17 @@ jobs:
             throw "the multimedia backend plugin does not load against the DLLs being shipped"
           }
 
+      # TurboCut: sem isto, um Windows limpo abre o app com "MSVCP140_1.dll não
+      # foi encontrado" (relato real de usuária em 29/08/2026). O .iss só embute
+      # e roda o redist se o arquivo existir, então o download vive aqui.
+      - name: Fetch Visual C++ redistributable
+        shell: pwsh
+        run: |
+          Invoke-WebRequest -Uri "https://aka.ms/vs/17/release/vc_redist.x64.exe" `
+            -OutFile "installer\windows\vc_redist.x64.exe"
+          $mb = [math]::Round((Get-Item "installer\windows\vc_redist.x64.exe").Length / 1MB, 1)
+          Write-Host "vc_redist.x64.exe: $mb MB"
+
       - name: Build Inno Setup installer
         uses: Minionguyjpro/Inno-Setup-Action@v1.2.6
         with:

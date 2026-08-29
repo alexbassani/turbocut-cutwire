@@ -68,3 +68,6 @@ third_party/prebuilt/
 # TurboCut — arquivos locais
 .claude/settings.local.json
 _planejamento/
+
+# Redist do Visual C++ baixado pelo CI na hora de empacotar (nao versionar)
+installer/windows/vc_redist.x64.exe
