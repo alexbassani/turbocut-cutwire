@@ -40,8 +40,11 @@ obras; **todo sync parte da última tag `vX.Y.Z`**.
    reprova (2 incidentes reais em 28/08/2026): `numerusform` um por linha
    (multi-linha) e aspas duplas como `&quot;` dentro de `<translation>`.
 5. **`sourcelanguage="en_US"`** no cabeçalho do catálogo (o lupdate normaliza).
-6. **Versão acompanha a base do Drift** (`project(Drift VERSION X.Y.Z)` ==
-   PKGBUILD == tag, o release.yml recusa se divergir).
+6. **Versão: os três SEMPRE iguais** — `project(Drift VERSION X.Y.Z)` == `pkgver`
+   do PKGBUILD == tag (o release.yml recusa se divergir). A base vem do Drift;
+   correções só nossas entre releases deles ganham **patch próprio** (foi o caso
+   da `0.4.1`, com o runtime do Visual C++). Quando o Drift lançar `0.5.0`,
+   voltamos a acompanhar a base deles.
 7. **O fix FreeType do Windows fica** (`src/main.cpp`, `QT_QPA_PLATFORM`
    `windows:fontengine=freetype`): o DirectWrite corrompe glifos de fontes
    embutidas em certas GPUs/escalas. Respeita env já definido.
@@ -89,11 +92,16 @@ Alex Bassani — criador de conteúdo e "vibecoder": descreve o que quer, valida
 tela, decide o produto; a IA executa e explica sem jargão. Sempre pt-BR. Decisões
 dele são registradas com data e palavras literais nos docs de planejamento.
 
-## Estado atual (atualizado 28/08/2026 — v0.4.0: o lançamento)
+## Estado atual (atualizado 29/08/2026 — v0.4.1: o runtime do Visual C++)
 
-- **Release pública v0.4.0 no ar** (Windows/Linux/macOS/Arch/Flatpak), repo
-  público, main = base v0.4.0 + delta TurboCut, Tests 10/10.
-- App 100% pt-BR (1.666 strings), splash de marca, fix FreeType, ícone oficial.
+- **v0.4.1**: instalador Windows agora leva o **VC++ Redistributable** — sem ele
+  um Windows limpo abria com `MSVCP140_1.dll não foi encontrado` (bug relatado
+  por usuária real; o Drift oficial ainda tem o mesmo furo).
+- **v0.4.0** foi o lançamento: repo público, release multi-plataforma, app 100%
+  pt-BR, splash de marca, fix FreeType, ícone oficial, Tests 10/10.
+- **Upstream:** nossa tradução pt-BR foi **mergeada no Drift oficial** (PR #122)
+  e o fix do FreeType foi adotado por eles (#115). Registro completo em
+  `_planejamento/RELACAO_UPSTREAM.md`.
 - Card do TurboStudio completo (baixa/instala/atualiza/abre) ESTACIONADO na
   branch `feat/turbocut-card-instalador-set2026` aguardando o trem de release de lá.
 - Pendências e backlog: `_planejamento/BACKLOG_PROXIMAS_TAREFAS.md` (privado).
