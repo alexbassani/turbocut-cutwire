@@ -40,8 +40,11 @@ obras; **todo sync parte da última tag `vX.Y.Z`**.
    reprova (2 incidentes reais em 28/08/2026): `numerusform` um por linha
    (multi-linha) e aspas duplas como `&quot;` dentro de `<translation>`.
 5. **`sourcelanguage="en_US"`** no cabeçalho do catálogo (o lupdate normaliza).
-6. **Versão acompanha a base do Drift** (`project(Drift VERSION X.Y.Z)` ==
-   PKGBUILD == tag, o release.yml recusa se divergir).
+6. **Versão: os três SEMPRE iguais** — `project(Drift VERSION X.Y.Z)` == `pkgver`
+   do PKGBUILD == tag (o release.yml recusa se divergir). A base vem do Drift;
+   correções só nossas entre releases deles ganham **patch próprio** (foi o caso
+   da `0.4.1`, com o runtime do Visual C++). Quando o Drift lançar `0.5.0`,
+   voltamos a acompanhar a base deles.
 7. **O fix FreeType do Windows fica** (`src/main.cpp`, `QT_QPA_PLATFORM`
    `windows:fontengine=freetype`): o DirectWrite corrompe glifos de fontes
    embutidas em certas GPUs/escalas. Respeita env já definido.
@@ -89,13 +92,26 @@ Alex Bassani — criador de conteúdo e "vibecoder": descreve o que quer, valida
 tela, decide o produto; a IA executa e explica sem jargão. Sempre pt-BR. Decisões
 dele são registradas com data e palavras literais nos docs de planejamento.
 
-## Estado atual (atualizado 28/08/2026 — v0.4.0: o lançamento)
+## Estado atual (atualizado 30/08/2026 — distribuição fechada; aguardando tag do Drift)
 
-- **Release pública v0.4.0 no ar** (Windows/Linux/macOS/Arch/Flatpak), repo
-  público, main = base v0.4.0 + delta TurboCut, Tests 10/10.
-- App 100% pt-BR (1.666 strings), splash de marca, fix FreeType, ícone oficial.
-- Card do TurboStudio completo (baixa/instala/atualiza/abre) ESTACIONADO na
-  branch `feat/turbocut-card-instalador-set2026` aguardando o trem de release de lá.
+- **v0.4.1 no ar**: instalador Windows leva o **VC++ Redistributable** (bug real
+  de Windows limpo, `MSVCP140_1.dll`; o Drift oficial ainda tem o furo — reporte
+  upstream pendente de OK do Alex, item 16-B do backlog).
+- **v0.4.0** foi o lançamento: repo público, release multi-plataforma, app 100%
+  pt-BR, splash de marca, fix FreeType, ícone oficial, Tests 10/10.
+- **Card do TurboStudio SAIU no trem 5.51.1 e FUNCIONA** com aluno real
+  (confirmado pelo Alex em 30/08) — baixa/instala/abre; o "atualizar" estreia no
+  primeiro sync.
+- **Landing no domínio oficial**: cpmdark.com.br/turbocut (mirror
+  alexbassani.com.br/turbocut segue no ar).
+- **Upstream:** tradução pt-BR mergeada (PR #122); fix FreeType adotado (#115) —
+  sai do delta no próximo sync; incidente da aspa ENCERRADO (main deles verde,
+  nosso PR #128 fechado como superseded). Registro em
+  `_planejamento/RELACAO_UPSTREAM.md`.
+- **Aguardando o Drift cortar tag nova** — será a 1ª atualização real dos
+  usuários; 327 strings novas já traduzidas e playbook pronto.
+- **Rodrigo (autocut)** fez o fork (`guigomaster01/turbocut-cutwire`); sem
+  código ainda; onde o autocut mora segue decisão pendente do Alex.
 - Pendências e backlog: `_planejamento/BACKLOG_PROXIMAS_TAREFAS.md` (privado).
 
 ## Checklist antes de qualquer alteração
