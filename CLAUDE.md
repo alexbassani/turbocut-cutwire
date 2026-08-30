@@ -74,50 +74,39 @@ FreeType, splash `TurboSplash`), `src/qml/Main.qml` (título),
 6. Build de teste: `gh workflow run build-windows.yml -R cpmdark/turbocut-cutwire -f version=X.Y.Z-turboN`.
 7. Validou? Tag `vX.Y.Z` → release.yml gera TODAS as plataformas e publica a
    release (o aviso de atualização in-app e o card do TurboStudio leem daqui).
-8. Atualizar `## Estado atual` abaixo NO MESMO fluxo (regra da casa: doc que
-   envelhece vira armadilha).
+8. Atualizar `## Estado atual (atualizado 30/08/2026 — SYNC DA v0.5.0 FEITO, aguardando validacao do build)
 
-## Ecossistema (contexto, não código deste repo)
-
-- **TurboStudio** (repo privado do Alex) tem o card que instala/atualiza/abre o
-  TurboCut lendo as releases deste repo. ⛔ Bancada compartilhada com outras
-  frentes: NUNCA mexer lá sem avisar o Alex antes e sem o protocolo da casa.
-- **Landing**: cpmdark.com.br/turbocut (fonte em `_planejamento/landing/`).
-- **Upstream**: relação de colaborador — bugs reportados, tradução oferecida.
-  Rascunhos de issues em `_planejamento/rascunhos-upstream/` (só o Alex posta).
-
-## Quem é o usuário
-
-Alex Bassani — criador de conteúdo e "vibecoder": descreve o que quer, valida na
-tela, decide o produto; a IA executa e explica sem jargão. Sempre pt-BR. Decisões
-dele são registradas com data e palavras literais nos docs de planejamento.
-
-## Estado atual (atualizado 30/08/2026 — distribuição fechada; aguardando tag do Drift)
-
-- **Repo transferido para a organização `cpmdark`** (30/08): agora é
-  `github.com/cpmdark/turbocut-cutwire` (nome bate com o domínio oficial).
-  Links antigos redirecionam sozinhos; feed de update, instalador, README,
-  PKGBUILD, metainfo e landing já apontam pro endereço novo. Falta: card do
-  TurboStudio (bilhete com o Alex) e build de teste antes do próximo release.
-- **v0.4.1 no ar**: instalador Windows leva o **VC++ Redistributable** (bug real
-  de Windows limpo, `MSVCP140_1.dll`; o Drift oficial ainda tem o furo — reporte
-  upstream pendente de OK do Alex, item 16-B do backlog).
-- **v0.4.0** foi o lançamento: repo público, release multi-plataforma, app 100%
-  pt-BR, splash de marca, fix FreeType, ícone oficial, Tests 10/10.
-- **Card do TurboStudio SAIU no trem 5.51.1 e FUNCIONA** com aluno real
-  (confirmado pelo Alex em 30/08) — baixa/instala/abre; o "atualizar" estreia no
-  primeiro sync.
-- **Landing no domínio oficial**: cpmdark.com.br/turbocut (mirror
-  alexbassani.com.br/turbocut segue no ar).
-- **Upstream:** tradução pt-BR mergeada (PR #122); fix FreeType adotado (#115) —
-  sai do delta no próximo sync; incidente da aspa ENCERRADO (main deles verde,
-  nosso PR #128 fechado como superseded). Registro em
-  `_planejamento/RELACAO_UPSTREAM.md`.
-- **Aguardando o Drift cortar tag nova** — será a 1ª atualização real dos
-  usuários; 327 strings novas já traduzidas e playbook pronto.
-- **Rodrigo (autocut)** fez o fork (`guigomaster01/turbocut-cutwire`); sem
-  código ainda; onde o autocut mora segue decisão pendente do Alex.
-- Pendências e backlog: `_planejamento/BACKLOG_PROXIMAS_TAREFAS.md` (privado).
+- **⏳ SYNC 0.5.0 EM ANDAMENTO (o mais importante agora):** o Drift cortou a
+  `v0.5.0` em 30/08 e o rebase JA FOI FEITO e empurrado (main = base v0.5.0).
+  Falta: validar o `TurboCut-Setup` de teste (`0.5.0-turbo1`) na tela do Alex e,
+  com o OK dele, cortar a tag `v0.5.0` — que dispara a release e a PRIMEIRA
+  atualizacao real dos usuarios (aviso in-app + card do TurboStudio).
+  - Delta emagreceu: **14 commits** (eram 19) — o fix FreeType saiu porque eles
+    adotaram (regra de ouro 7 agora e historica; o codigo vem do upstream).
+  - Conflitos resolvidos: `main.cpp` (nomes migraram para antes do QApplication,
+    por causa do ui/scale novo; include duplicado do splash), `Main.qml`
+    (`visibility` em vez de `visible`), metainfo (entradas 0.5.0 + 0.4.1).
+  - Catalogo: 27 strings novas traduzidas (pastas na bin, Android, preview na
+    GPU) e **cabecalho consertado** — o lupdate deles gravou `language="en"`
+    num arquivo pt_BR (regra de ouro 5). Tests VERDE, `Translations` incluso.
+  - ⚠️ **Push do sync exige force-push** e a branch protection bloqueia: o Alex
+    liga "Allow force pushes" nas settings, a IA empurra e **recoloca a trava
+    via API** (`gh api -X PUT .../branches/main/protection --input -`).
+- **O que a 0.5.0 traz aos usuarios:** export e preview na GPU (resolve a dor
+  do Alex, nossa issue #127 fechada como concluida), pastas na biblioteca,
+  preview/trim/crop antes da timeline, estabilizacao de video, Face Swap,
+  escala da interface, e a traducao pt-BR do Alex **creditada nas notas deles**.
+- **v0.4.1** e a release publica atual (VC++ Redistributable no instalador).
+- **Card do TurboStudio** funciona com aluno real (trem 5.51.1); o "atualizar"
+  estreia justamente nesta 0.5.0.
+- **Landing** nos dois dominios com o endereco novo (cpmdark.com.br/turbocut).
+- **Repo na organizacao `cpmdark`** desde 30/08 (transferencia completa: feed de
+  update, instalador, README, PKGBUILD, metainfo, docs e landing).
+- **Upstream:** traducao mergeada (PR #122); #115/#116/#127 fechadas; #124 virou
+  duplicata da #100 deles (aplicar transicao/atributos em massa — pedido real de
+  usuario no YouTube, candidata a PR nosso); #123 e #125 abertas.
+- **Rodrigo (autocut)** tem fork (`guigomaster01/turbocut-cutwire`), sem codigo.
+- Pendencias e backlog: `_planejamento/BACKLOG_PROXIMAS_TAREFAS.md` (privado).
 
 ## Checklist antes de qualquer alteração
 
