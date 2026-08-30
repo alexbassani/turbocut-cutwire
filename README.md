@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/alexbassani/turbocut-cutwire/releases/latest"><img src="https://img.shields.io/github/v/release/alexbassani/turbocut-cutwire?label=release" alt="Latest release"></a>
+  <a href="https://github.com/cpmdark/turbocut-cutwire/releases/latest"><img src="https://img.shields.io/github/v/release/cpmdark/turbocut-cutwire?label=release" alt="Latest release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-blue.svg" alt="License: GPL-3.0"></a>
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20Android-lightgrey" alt="Platform: Windows | Linux | macOS | Android">
 </p>
 
 <p align="center">
-  <a href="https://github.com/alexbassani/turbocut-cutwire/releases/latest">Download</a> ·
-  <a href="https://github.com/alexbassani/turbocut-cutwire/issues">Issues</a> ·
+  <a href="https://github.com/cpmdark/turbocut-cutwire/releases/latest">Download</a> ·
+  <a href="https://github.com/cpmdark/turbocut-cutwire/issues">Issues</a> ·
   <a href="FORK.md">Sobre o fork</a> ·
   <a href="LICENSE">Licença</a>
 </p>

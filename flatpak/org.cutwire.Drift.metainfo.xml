@@ -131,7 +131,7 @@
       </description>
     </release>
     <release version="0.4.1" date="2026-08-29">
-      <url type="details">https://github.com/alexbassani/turbocut-cutwire/releases/tag/v0.4.1</url>
+      <url type="details">https://github.com/cpmdark/turbocut-cutwire/releases/tag/v0.4.1</url>
       <description>
         <p>O instalador do Windows agora leva junto o runtime do Visual C++, que faltava
         em computadores recém-formatados.</p>
