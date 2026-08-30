@@ -4,7 +4,7 @@ pkgver=0.5.0
 pkgrel=1
 pkgdesc="Beginner-friendly open-source video editor built with Qt 6, QML and FFmpeg"
 arch=('x86_64')
-url="https://github.com/alexbassani/turbocut-cutwire"
+url="https://github.com/cpmdark/turbocut-cutwire"
 license=('GPL-3.0-or-later')
 depends=(
     'qt6-base' 'qt6-declarative' 'qt6-svg' 'qt6-multimedia' 'qt6-multimedia-ffmpeg'
@@ -21,7 +21,7 @@ makedepends=('cmake' 'ninja' 'git' 'pkgconf' 'qt6-tools' 'xorg-server-xvfb')
 _commit="${_commit:-v$pkgver}"
 # TurboCut (fork): a fonte é este repositório — o CI passa _commit=$GITHUB_SHA,
 # que só existe aqui, não no repo do upstream.
-source=("$pkgname::git+https://github.com/alexbassani/turbocut-cutwire.git#commit=$_commit")
+source=("$pkgname::git+https://github.com/cpmdark/turbocut-cutwire.git#commit=$_commit")
 sha256sums=('SKIP')
 
 # ONNX Runtime is never linked and never shipped: Drift dlopens whichever build the user installs

@@ -414,7 +414,7 @@ ThemedDialog {
                     tone: "default"
                     textFormat: Text.RichText
                     linkColor: Theme.primary
-                    text: "<a href=\"https://github.com/alexbassani/turbocut-cutwire/issues\">%1</a>"
+                    text: "<a href=\"https://github.com/cpmdark/turbocut-cutwire/issues\">%1</a>"
                           .arg(qsTr("Report a bug"))
                     onLinkActivated: (link) => Qt.openUrlExternally(link)
                     HoverHandler {

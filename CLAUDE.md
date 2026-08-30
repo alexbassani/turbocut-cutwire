@@ -71,7 +71,7 @@ FreeType, splash `TurboSplash`), `src/qml/Main.qml` (título),
    passa).
 5. O workflow **Tests** roda sozinho no push (10 testes; `Translations` é o
    guardião do catálogo).
-6. Build de teste: `gh workflow run build-windows.yml -R alexbassani/turbocut-cutwire -f version=X.Y.Z-turboN`.
+6. Build de teste: `gh workflow run build-windows.yml -R cpmdark/turbocut-cutwire -f version=X.Y.Z-turboN`.
 7. Validou? Tag `vX.Y.Z` → release.yml gera TODAS as plataformas e publica a
    release (o aviso de atualização in-app e o card do TurboStudio leem daqui).
 8. Atualizar `## Estado atual` abaixo NO MESMO fluxo (regra da casa: doc que
@@ -94,6 +94,11 @@ dele são registradas com data e palavras literais nos docs de planejamento.
 
 ## Estado atual (atualizado 30/08/2026 — distribuição fechada; aguardando tag do Drift)
 
+- **Repo transferido para a organização `cpmdark`** (30/08): agora é
+  `github.com/cpmdark/turbocut-cutwire` (nome bate com o domínio oficial).
+  Links antigos redirecionam sozinhos; feed de update, instalador, README,
+  PKGBUILD, metainfo e landing já apontam pro endereço novo. Falta: card do
+  TurboStudio (bilhete com o Alex) e build de teste antes do próximo release.
 - **v0.4.1 no ar**: instalador Windows leva o **VC++ Redistributable** (bug real
   de Windows limpo, `MSVCP140_1.dll`; o Drift oficial ainda tem o furo — reporte
   upstream pendente de OK do Alex, item 16-B do backlog).
