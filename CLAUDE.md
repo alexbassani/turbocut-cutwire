@@ -76,6 +76,16 @@ FreeType, splash `TurboSplash`), `src/qml/Main.qml` (título),
    release (o aviso de atualização in-app e o card do TurboStudio leem daqui).
 8. Atualizar `## Estado atual (atualizado 30/08/2026 — v0.5.0 LANCADA, 1a atualizacao real dos usuarios)
 
+- **✅ v0.5.1 NO AR** (05/09): correcao do piscar preto na pre-visualizacao em
+  placas NVIDIA (defeito que a 0.5.0 trouxe junto com a aceleracao do preview).
+  Sync limpo: 1 conflito so (selo de plataformas do README), catalogo com 0
+  pendencias, release verde de primeira em todas as plataformas.
+  https://github.com/cpmdark/turbocut-cutwire/releases/tag/v0.5.1
+- **⏳ PROXIMO SYNC ja tem material:** o `main` deles tem ~20 commits apos a
+  v0.5.1, com **camada de ajuste** (ideia do Alex, issue #154, entregue em 1 dia),
+  **multi-selecao + acoes em lote na bin** (nossa #123) e **arrastar a selecao
+  junta na timeline**. Aguardando eles cortarem a tag (regra #0.1). O pt_BR do
+  `main` deles ja tem **44 strings sem traducao**.
 - **🎉 v0.5.0 NO AR** (30/08): primeiro sync completo do fork, e a PRIMEIRA
   atualizacao que os usuarios recebem pelos canais que construimos (aviso in-app
   + botao "Atualizar" do card do TurboStudio, ambos estreando).
